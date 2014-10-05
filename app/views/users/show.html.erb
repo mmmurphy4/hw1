@@ -22,10 +22,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About <%= @user.name %></h2>
-                <p>Hey everyone my name is <%= @user.name %>, I am <%= @user.years_old %> years old</p>
+                <p>Hey everyone my name is <%= @user.name %>, I am <%= @user.age %> years old and I'm a <%= @user.major %> major.</p>
             </div>
         </div>
     </section>
+    <%= link_to 'delete this user', @user, method: :delete %>
 </body>
 
 
